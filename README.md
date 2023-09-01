@@ -73,10 +73,4 @@ Contributions to this project are welcome. If you would like to contribute, plea
 
 5. Ensure that your code follows the project's coding standards.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README to include any additional information or instructions that may be relevant to your specific project. Good luck with your WhatsApp and Gmail QR code generator!
+Good luck with your WhatsApp and Gmail QR code generator!
