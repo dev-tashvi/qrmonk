@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="betastyle.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>QRMONK</title>
+  </head>
+  <body>
+    <div class="loader-box">
+      <p class="loadtext">
+        Save Coustomer Time 🕰️<br />with fast and secure 🔐 <br />
+        <span>QR</span>
+      </p>
+      <lottie-player
+        class="qranimation"
+        src="https://lottie.host/26a2216c-f4b3-4473-9d34-f7316e289759/nGYb2MI4o1.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+
+    <div class="desktop">
+      <lottie-player
+        src="https://lottie.host/471b4ba2-1a07-4ac8-82ab-2b3ed2ebf975/6Z3bzuLFLw.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+    <div class="desktop" style="transform: translateX(0px) !important;">
+      <h3 class="heading-h3" style="text-align: center;">We are not available on current screen ratio 🖥️, <br> Please open it in mobile 📱</h3>
+    </div>
+
+    <section class="mobile">
+      <div class="topbar">
+        <span>QRMONK</span>
+      </div>
+
+      <div class="qrform">
+        <select
+          class="form-select"
+          id="select"
+          aria-label="Default select example"
+        >
+          <option value="0">@ For Mail</option>
+          <option value="1">Whatsapp</option>
+        </select>
+        <h5 style="height: 0px; color: #41464b">Email/Whatsapp QR Code</h5>
+        <label
+          for="gmail"
+          class="gmaillabel"
+          style="height: 0px; font-size: 20px; font-weight: 600"
+          >Email:</label
+        >
+        <input type="text" name="gamil" id="mail" placeholder="Enter mail Id" />
+        <label
+          for="phone"
+          class="phonelabel hidden"
+          style="
+            height: 0px;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            top: 10%;
+          "
+          >Whatsapp No:</label
+        >
+        <input
+          type="text"
+          class="hidden"
+          name="phone"
+          id="phone"
+          placeholder="Enter Whatsapp no."
+        />
+        <div class="buttons">
+          <button class="clear" id="generate" style="width: 100%">
+            GENERATE / DOWNLOAD
+          </button>
+          <button class="clear" style="width: 100%">
+            <i class="fa fa-trash" style="position: relative; right: 5%"></i
+            >CLEAR
+          </button>
+        </div>
+      </div>
+      <div id="qrcode"><defs>
+        <radialGradient id="RadialGradient1">
+          <stop offset="50%" stop-color="#db4437" />
+          <stop offset="50%" stop-color="#0d62fd" />
+        </radialGradient>
+      </defs>
+    </div>
+      <div class="container" style="color: #294270;">
+        <div class="row">
+          <div class="offset-xxl-2 offset-lg-1 col-xxl-8 col-lg-10">
+            <div class="base-styles">
+              <h1 class="heading-h1 heading-h1--center" id="about">
+                Use QR Code Generator Email for Free
+              </h1>
+              <h3 class="heading-h3">
+                Can I generate an email or Whatsapp to QR Code?
+              </h3>
+              <p class="longtext">
+                Yes, you can! Using our QR Code Generator for email and
+                Whatsapp, you can easily write an entire email/message contained
+                within a QR Code. This solution is also known as Email/Whatsapp
+                QR Code and is especially useful if you would like to make it
+                easier for your audience or customers to contact you.
+              </p>
+              <h3 class="heading-h3">
+                What information can be stored in an Email/Whatsapp QR Code?
+              </h3>
+              <p class="longtext">
+                To encode an email to QR Code successfully, you will need an
+                email address, and for Whatsapp you just need your Whatsapp
+                activated number It merely uses a simple mailto: formatting
+                shown in examples below.
+              </p>
+              <h3 class="heading-h3">Why do I need an QR Code?</h3>
+              <h4 class="heading-h4">Reduces human errors</h4>
+              <p class="longtext">
+                When sending an email, the process first involves opening an
+                email client either in an app or a browser. Then, a target email
+                address is typed manually, By typing manually, there is a
+                likelihood of misspelling the email address, which will result
+                in an unsent email or email that is sent to the wrong recipient.
+                But with an Email QR Code, all it takes to send the correct
+                email to the intended recipient is by just scanning and hitting
+                send. also for Whatsapp, send message to unkown number is bit
+                difficut , and first you have to type it and then save which is
+                kind anoying with QR you can just:<br />
+                1. scan the Whatsapp QR<br />
+                2. send your file without saving number. "WOLA :)"
+              </p>
+              <h4 class="heading-h4">Improves customer communication</h4>
+              <p class="longtext">
+                If you’re a service provider or product manufacturer, an Email
+                QR Code would be the best way to get a customer’s feedback in an
+                instant. Apply the Code directly on your packaging or on all
+                your marketing and promotional materials so that customers can
+                reach you without fiddling through your website to get the email
+                address. A sample Email QR Code to easily get this feedback can
+                look like this:
+              </p>
+              <img
+                alt="An Email QR Code example with pre-populated text to get help from customer support"
+                class="solution-page__image--center"
+                data-lazy-loaded="true"
+                src="sample.png"
+                style="display: block; visibility: visible"
+              />
+              <h4 class="heading-h4">Uses zero cost to implement</h4>
+              <p class="longtext">
+                Who doesn’t like to get free stuff? That’s right, our Email QR
+                Code is completely free. There is absolutely ZERO cost to
+                create, download, and use. And guess what? It never expires! As
+                long as your email address is still valid, you will get the
+                emails sent from this type of QR Code.
+              </p>
+              <h3 class="heading-h3">
+                Any tips for using a QR Code generator for email?
+              </h3>
+              <h4 class="heading-h4">Make sure the information is accurate</h4>
+              <p class="longtext">
+                We cannot stress this enough. because we use world's best API to check email
+                is sendable or not everything will be check but 
+                Make sure that the recipient’s
+                email address is valid and avoid any typos. Printing QR Codes
+                with invalid information will result in a very expensive
+                reprinting cost. The Email QR Code is a form of Static Code,
+                which means the information inside cannot be edited once it’s
+                generated. If there’s a mistake in the email address, the QR
+                Code can still be scanned, however, you’ll risk not receiving
+                the email because of the typo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style="margin-right: 25px;">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="text-muted" style="color: #294270 !important;font-weight: 500;">© 2023 PURE, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a  href="https://www.linkedin.com/in/vijay-banjara/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="ms-3"><a  href="mailto:vijaybanjara46@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+
+          </ul>
+        </footer>
+      </div>
+    </section>
+    <script type="text/javascript">
+      $("rect:first").css("fill", "green");
+      var container = document.getElementById("qrcode");
+
+      $(".clear").on("click", function () {
+        if ($("#qrcode").html() != "") {
+          $("#qrcode").html("");
+        }
+      });
+
+      $("#select").on("change", function () {
+        if ($(this).val() == 1) {
+          $("#mail").addClass("hidden");
+          $(".gmaillabel").addClass("hidden");
+
+          $(".phonelabel").removeClass("hidden");
+          $("#phone").removeClass("hidden");
+        } else {
+          $("#mail").removeClass("hidden");
+          $(".gmaillabel").removeClass("hidden");
+
+          $(".phonelabel").addClass("hidden");
+          $("#phone").addClass("hidden");
+        }
+      });
+
+      $("#generate").on("click", function () {
+        if (!$("#phone").hasClass("hidden")) {
+          var mobNum = $("#phone").val();
+          var validateMobNum = /^\d*(?:\.\d{1,2})?$/;
+          if (mobNum.length == 10 && validateMobNum.test(mobNum)) {
+            qrmobile(mobNum);
+          } else error("phone");
+        }
+      });
+
+      $("#generate").on("click", function () {
+        if(!$("#mail").hasClass("hidden"))
+        {
+          if ($("#mail").val() != " " && $("#mail").val() != "") {
+            checkmail(
+              $("#mail").val()
+            ); /*here we will send mail for the API to check its deliverability*/
+          } else {
+            error("mail");
+          }
+        }
+      });
+
+      function error(respo) {
+        /*sweet alert for error message*/
+        console.log(respo);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          timer: 1000,
+          showConfirmButton: false,
+          text:
+            respo == "phone"
+              ? "please enter Valid Number"
+              : "Please enter mail ID",
+        });
+      }
+      function checkmail(mailid) {
+      //   /*sending mail id through ajax for it's deiliverability*/
+          $.ajax({
+          url: "https://emailvalidation.abstractapi.com/v1/?api_key=6f845c770ec14dd2b45e6b9a98b152a4&email="+mailid,
+          type: "GET",
+          dataType: "json",
+          error: function (xhr, ajaxOptions, thrownError) {
+            console.log(xhr);
+          },
+          success: function (parsed_json) {
+            parsed_json["deliverability"] == "DELIVERABLE"
+              ? qrgenmail(mailid)
+              : error("mail");
+          },
+        });
+      }
+      
+      function qrgenmail(mailid) {
+        /*here after validating mail id we will generate mail id's QR code*/
+        const mail = mailid;
+        if ($("#qrcode").html() == "") {
+          const qrCodeData = `mailto:${mail}`;
+          const qrCode = new QRCodeStyling({
+            width: 300,
+            height: 300,
+            type: "svg",
+            data: qrCodeData,
+            image:
+              "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg",
+            dotsOptions: {
+              type: "rounded",
+                gradient:{
+                  type:"linear",
+                  rotation: 0,
+                  colorStops:[{ offset: 0, color: '#EA4335' }, {  offset: 1, color: '#4285F4' }],
+                },
+            },
+            backgroundOptions: {
+              color: "white",
+            },
+            imageOptions: {
+              crossOrigin:"anonymous",
+              margin: 4,
+              imageSize: 0.5,
+            },
+            cornersSquareOptions:{
+              type:"extra-rounded",
+              color:"black",
+            },
+            cornersDotOptions:{
+              type:"dot",
+              color:"black",
+            },
+            qrOptions:{
+              errorCorrectionLevel:"H",
+            }
+          });
+          qrCode.append(document.getElementById("qrcode"));
+          qrCode.download({ name: "qrmail", extension: "jpeg" });
+        }
+      }
+      function qrmobile(mobile) {
+        const qrCodeData = "https://wa.me/+91" + mobile;
+        if ($("#qrcode").html() == "") {
+          try {
+            const qrCode = new QRCodeStyling({
+              width: 300,
+              height: 300,
+              type: "canvas",
+              data: qrCodeData,
+              image:
+                "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+                dotsOptions: {
+                type: "extra-rounded",
+                  gradient:{
+                    type:"radial",
+                    rotation: 0,
+                    colorStops:[{ offset: 0, color: '#4FCE5D' }, {  offset: 1, color: '#435A64' }],
+                  },
+              },
+              backgroundOptions: {
+                color: "white",
+              },
+              imageOptions: {
+                crossOrigin: "anonymous",
+                margin: 4,
+                imageSize: 0.5,
+              },
+              cornersSquareOptions:{
+                type:"extra-rounded",
+                color: "black",
+              },
+              cornersDotOptions:{
+                type:"dot",
+                color:"black",
+              },
+              qrOptions:{
+                errorCorrectionLevel:"H",
+              }
+            });
+            qrCode.append(document.getElementById("qrcode"));
+            qrCode.download({ name: "qrwhatsapp", extension: "png" });
+          } catch (error) {
+            console.log(error)
+          }
+        }
+      }
+
+      $(window).on("load", function () {
+        $(".loader-box").delay(2500).fadeOut("slow");
+      });
+    </script>
+  </body>
+</html>

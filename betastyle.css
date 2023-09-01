@@ -1,0 +1,244 @@
+@media screen and (max-width: 735px) and (min-width: 0px) {
+  body {
+    height: 100%;
+    width: 100%;
+    /* margin: 0px; */
+  }
+  .desktop
+  {
+    display: none;
+  }
+  #gmail
+  {
+    height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 15px;
+  }
+  
+  input {
+    display: block;
+    margin-top: 20px;
+    height: 45px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-weight: 600;
+    position: relative;
+    top: 25%;
+  }
+  #select
+  {
+    display: inline;
+    height: 3rem;
+    width: 18em;
+    font-weight: 600;
+    font-size: 17px;
+    border: 2px solid #C0CED5;
+  }
+  .qrform
+  {
+    border: 4px solid #0a2246ba;
+    display: grid;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 28em;
+    z-index: 1;
+    transform: translate(0px, -4em);
+    background: #f9f9f9;
+    border-radius: 10px;
+  }
+  #qrcode {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: center;
+  }
+  #about
+  {
+    text-align: center;
+    font-size: calc(1.375rem + 1.7vw) !important;
+  }
+  .heading-h3
+  {
+    margin-top: 2em;
+    color: #1b294b;
+    font-weight: 600;
+  }
+  .longtext
+  {
+    margin-top: 22px;
+    margin-bottom: 1rem;
+  }
+  .solution-page__image--center
+  {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px
+  }
+  .heading-h4
+  {
+    margin-top: 1em;
+    color: #1b294b;
+    font-weight: 600;
+  }
+  .hidden {
+    display: none;
+  }
+  .row
+  {
+    padding-right: calc(var(--bs-gutter-x) * 1.5) !important;
+    padding-left: calc(var(--bs-gutter-x) * 1.5) !important;
+  }
+  .loader-box {
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    z-index: 999;
+  }
+  .loadtext {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8em;
+    font-family: sans-serif;
+    position: relative;
+    top: 75%;
+    margin: 0;
+    padding: 0;
+    height: 30%;
+    animation: fadein 0.8s ease-in-out;
+  }
+  .topbar
+  {
+    padding: 10px;
+    font-size: 1.8rem;
+    text-align: justify;
+    font-weight: 500;
+    position: relative;
+    height: 140px;
+    background: #d7e5fa;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+  }
+  .buttons
+  {
+    display: grid;
+    align-content: space-around;
+    position: relative;
+    top: 10%;
+  }
+  .clear
+  {
+    background-color: #90c52d;
+    height: 2.7em;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    border: 0px solid transparent;
+    border-radius: 20px;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  lottie-player {
+    width: 40% !important;
+    height: 40% !important;
+    transform: translate3d(5.3em, 4em, 0px) !important;
+    content-visibility: visible;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  body
+  {
+   display: grid;
+   justify-content: center;
+   height: 100%;
+  }
+  .mobile,.loader-box
+  {
+   display: none;
+  }
+   .desktop
+   {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+   }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body
+  {
+   display: grid;
+   justify-content: center;
+   height: 100%;
+  }
+  .mobile,.loader-box
+  {
+   display: none;
+  }
+   .desktop
+   {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+   }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body
+  {
+   display: grid;
+   justify-content: center;
+   height: 100%;
+  }
+  .mobile,.loader-box
+  {
+   display: none;
+  }
+   .desktop
+   {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-15rem);
+   }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  body
+  {
+   display: grid;
+   justify-content: center;
+   height: 100%;
+  }
+  .mobile,.loader-box
+  {
+   display: none;
+  }
+   .desktop
+   {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-15rem);
+   }
+}
