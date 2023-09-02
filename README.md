@@ -10,7 +10,6 @@ Creating a website to convert WhatsApp numbers to QR codes and Gmail addresses i
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -25,7 +24,7 @@ This project is a web-based tool that allows users to easily generate QR codes f
 
 ## Demo
 
-You can access a live demo of this tool at [Demo Link](https://your-demo-link.com).
+You can access a live demo of this tool at [Demo Link](https://qrmonk.netlify.app/).
 
 ## Installation
 
